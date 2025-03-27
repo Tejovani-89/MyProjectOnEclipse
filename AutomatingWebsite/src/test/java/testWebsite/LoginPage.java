@@ -16,7 +16,7 @@ public class LoginPage {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.get("https://thinking-tester-contact-list.herokuapp.com/");
 		driver.findElement(By.id("email")).sendKeys("kushma.nuguri@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("praveenm");
