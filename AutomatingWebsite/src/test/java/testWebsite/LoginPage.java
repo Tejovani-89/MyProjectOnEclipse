@@ -16,12 +16,13 @@ public class LoginPage {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.get("https://thinking-tester-contact-list.herokuapp.com/");
 		driver.findElement(By.id("email")).sendKeys("kushma.nuguri@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("praveenm");
 		driver.findElement(By.id("submit")).click();
-		System.out.println(driver.getTitle());
+		String actualTitle = driver.getTitle();
+		System.out.println(actualTitle);
 		Thread.sleep(4000);
 		driver.close();
 	}
