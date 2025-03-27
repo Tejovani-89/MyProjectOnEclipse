@@ -22,7 +22,7 @@ public class LoginPage {
 		driver.findElement(By.id("password")).sendKeys("praveenm");
 		driver.findElement(By.id("submit")).click();
 		System.out.println(driver.getTitle());
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		driver.close();
 	}
 
