@@ -23,7 +23,9 @@ public class LoginPage {
 		driver.findElement(By.id("submit")).click();
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
-		Thread.sleep(4000);
+		Thread.sleep(3000);
+		driver.findElement(By.id("add-contact")).click();
+		Thread.sleep(3000);
 		driver.close();
 	}
 
